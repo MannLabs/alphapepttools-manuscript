@@ -21,7 +21,7 @@ jobs:
           working_directory: manuscript
       - name: Rename file
         run:
-            mv manuscript/manuscript.pdf ${{ inputs.name }}.pdf
+            mv manuscript/manuscript.pdf ${{ inputs.name }}
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
