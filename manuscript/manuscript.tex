@@ -1,0 +1,152 @@
+\documentclass[pdflatex,sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
+
+%%%% Standard Packages
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+\newtheorem{proposition}[theorem]{Proposition}%
+%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+
+\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+
+\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}%
+
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+
+\begin{document}
+
+\title[Modular and Scalable Analysis of Proteomics Data with alphapepttools]{Modular and Scalable Analysis of Proteomics Data with alphapepttools}
+
+%%=============================================================%%
+%% GivenName  -> \fnm{Joergen W.}
+%% Particle  -> \spfx{van der} -> surname prefix
+%% FamilyName  -> \sur{Ploeg}
+%% Suffix  -> \sfx{IV}
+%% \author*[1,2]{\fnm{Joergen W.} \spfx{van der} \sur{Ploeg}
+%%  \sfx{IV}}\email{iauthor@gmail.com}
+%%=============================================================%%
+
+\author[1,2]{\fnm{Vincenth} \sur{Brennsteiner}}
+
+\author[1,2]{\fnm{Lucas} \sur{Diedrich}}
+
+\author[1]{\fnm{Shani} \sur{Ben-Moshe}}
+
+\author[1]{\fnm{Magnus} \sur{Schwörer}}
+
+\author[2]{\fnm{scverse proteomics interest group}}
+
+\author[1]{\fnm{Matthias} \sur{Mann}}\email{mmann@biochem.mpg.de}
+
+
+\affil[1]{\orgdiv{Department for Proteomics and Signal Transduction}, \orgname{Max Planck Institute of Biochemistry}, \orgaddress{\street{Am Klopferspitz 18}, \city{Planegg}, \postcode{821252}, \state{Bavaria}, \country{Germany}}}
+\affil[2]{\orgdiv{Proteomics Interest Group}, \orgname{scverse}}
+
+
+%%==================================%%
+%% Sample for unstructured abstract %%
+%%==================================%%
+
+\abstract{Abstract.}
+
+%%================================%%
+%% Sample for structured abstract %%
+%%================================%%
+
+% \abstract{\textbf{Purpose:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+%
+% \textbf{Methods:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+%
+% \textbf{Results:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+%
+% \textbf{Conclusion:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.}
+
+\keywords{LC/MS Proteomics, Data Analysis}
+
+%%\pacs[JEL Classification]{D8, H51}
+
+%%\pacs[MSC Classification]{35A01, 65L10, 65L12, 65L20, 65L70}
+
+\maketitle
+
+\section{Introduction}\label{sec:introduction}
+% 500 words
+
+\section{Results}\label{sec:results}
+% \section, \subsection, \subsubsection
+
+\section{Discussion}\label{sec:discussion}
+
+
+\backmatter
+
+\bmhead{Supplementary information}
+
+If your article has accompanying supplementary file/s please state so here.
+
+
+\bmhead{Acknowledgements}
+% Acknowledgements are not compulsory. Where included they should be brief. Grant or contribution numbers may be acknowledged.
+% Please refer to Journal-level guidance for any specific requirements.
+
+\section*{Declarations}
+\subsection*{Funding}
+Not applicable
+
+\subsection*{Competing interests}
+
+\subsection*{Ethics approval and consent to participate}
+Not applicable
+
+\subsection*{Consent for publication}
+% All authors read the manuscript and agreed to its publication.
+
+\subsection*{Data availability}
+
+\subsection*{Materials availability}
+Not applicable
+
+\subsection*{Code availability}
+
+\subsection*{Author contribution}
+
+
+\begin{appendices}
+
+  \section{Extended Data}\label{secA1}
+
+  %   An appendix contains supplementary information that is not an essential part of the text itself but which may be helpful in providing a more comprehensive understanding of the research problem or it is information that is too cumbersome to be included in the body of the paper.
+
+\end{appendices}
+
+%%===========================================================================================%%
+%% If you are submitting to one of the Nature Portfolio journals, using the eJP submission   %%
+%% system, please include the references within the manuscript file itself. You may do this  %%
+%% by copying the reference list from your .bbl file, paste it into the main manuscript .tex %%
+%% file, and delete the associated \verb+\bibliography+ commands.                            %%
+%%===========================================================================================%%
+
+\bibliography{bibliography}% common bib file
+%% if required, the content of .bbl file can be included here once bbl is generated
+%%\input sn-article.bbl
+
+\end{document}
