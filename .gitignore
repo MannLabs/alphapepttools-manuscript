@@ -205,3 +205,35 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+## LATEX ## 
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.log
+*.out
+*.run.xml
+*.gz
+*.toc
+*.synctex.gz
+*synctex*
+**/*synctex*
+*.xdv
+*-blx.bib
+thesis.xdv
+thesis-blx.bib
+
+# Images 
+*.png 
+*.svg
+*.pdf
+
+# directories 
+# Ignore figures
+.vscode
