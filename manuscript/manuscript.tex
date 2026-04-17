@@ -76,6 +76,11 @@
 
 \section{Results}\label{sec:results}
 % \section, \subsection, \subsubsection
+\subsection{Application of alphapepttools across diverse proteomics workflows}
+To illustrate practical use cases, we reanalyzed selected datasets to demonstrate the versatility of alphapepttools across diverse data types, including low-input single-cell proteomics, matched proteomics and transcriptomics, and peptidomics analyses.
+For low-input single-cell proteomics, we revisited a dataset from Weiss et al. (2026) [ https://www.nature.com/articles/s42255-026-01459-2] that profiled the proteomes of individual human hepatocytes along the porto-central anatomical axis using Deep Visual Proteomics (DVP) [https://www.nature.com/articles/s41587-022-01302-5]. Using alphapepttools' built-in functionality, we reproduced the core elements of the published analysis workflow, including quality control visualization, data filtering, and dimensionality reduction via PCA (Fig. XXX).
+Notably, we extended the downstream analysis by inferring transcription factor activities associated with the different spatial layers. To this end, Decoupler package [https://academic.oup.com/bioinformaticsadvances/article/2/1/vbac016/6544613?login=true] from the scverse ecosystem [DOI: 10.1038/s41587-023-01733-8 ]. The AnnData-based enabled a streamlined interoperability with widely adopted computational tools.
+Taken together, alphapepttools' built-in functions and its inherent compatibility with available analysis tools facilitates efficient and biologically meaningful interpretation of proteomics datasets.
 
 \section{Discussion}\label{sec:discussion}
 
