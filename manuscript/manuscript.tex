@@ -55,7 +55,7 @@
 
 \author[2]{\fnm{scverse proteomics interest group}}
 
-\author*[1]{\fnm{Matthias} \sur{Mann}}\email{mmann@biochem.mpg.de}
+\author[1]{\fnm{Matthias} \sur{Mann}}\email{mmann@biochem.mpg.de}
 
 \affil[1]{\orgdiv{Department for Proteomics and Signal Transduction}, \orgname{Max Planck Institute of Biochemistry}, \orgaddress{\street{Am Klopferspitz 18}, \city{Planegg}, \postcode{821252}, \state{Bavaria}, \country{Germany}}}
 \affil[2]{\orgdiv{Proteomics Interest Group}, \orgname{scverse}}
@@ -78,6 +78,37 @@
 
 \section{Introduction}\label{sec:introduction}
 % 500 words
+Molecular profiling by MS-based proteomics enables the characterization of biological and clinical samples at high-throughput and increasing depth.
+MS-based proteomics is now routinely applied in both basic research and clinical settings to identify critical regulators of disease, contributing to a deeper understanding of the biology of diverse human conditions \cite{Nordmann.2024,Rosenberger.2025}. \smallskip
+
+The technology further advances with respect to proteomic depth \cite{Rosenberger.2023}, scale \cite{Albrecht.2025,Niu.2025}, and integration with additional modalities \cite{Fulcher.2024,Mund.2022,Zheng.2025a}.
+In line with developments in adjacent -omics fields such as RNA sequencing, MS-based proteomics is now applicable from highly resolved low-input and single-cell experiments \cite{Rosenberger.2023,Slavov.2026,Gatto.2023}, to spatial contexts \cite{NatureMethods.2024}, and large clinical cohorts including plasma proteomics \cite{Bader.2023}. This creates increasing demands for scalable, interoperable analysis frameworks tailored to the properties of MS-proteomics data.
+\smallskip
+
+Extracting biological insights from this wealth of information is the central goal of downstream analysis.
+Scalable analysis across modalities and experiments requires the integration of diverse computational tools including search engines, downstream analysis packages, and specialized software for biological interpretation.
+However, the heterogeneous output formats of current mass spectrometry workflows increase the overhead of connecting these tools.
+The limited adoption of common standards or best practices in downstream analysis complicates the performant, reproducible data analysis.
+These challenges affect not only computational scientists developing generalizable tools but also non-computational domain experts, such as clinicians, who need to focus on the biological questions at hand.
+\smallskip
+
+Several software solutions address parts of this problem.
+GUI-based platforms such as Perseus \cite{Tyanova.2018} provide accessible interfaces for statistical analysis but do not scale readily to large cohorts or integrate natively with multi-omics workflows.
+Dedicated R packages, including MSstats \cite{Choi.2014,Kohler.2023} and DEP \cite{Zhang.2018a}, %no longer supported(End of life on bioconductor)
+offer robust statistical frameworks for specific tasks but operate within a fragmented ecosystem with limited interoperability as they do not build on shared data structures that are interoperable with domain-specific packages for the biological interpretation of the data.
+\smallskip
+
+Parallel challenges during the scaling of single-cell RNA-sequencing datasets in recent years, have spurred the development of widely adopted software ecosystems such as Bioconductor \cite{Amezquita.2020} in R and the scverse project \cite{Virshup.2023} in Python.
+Especially the anndata \cite{Virshup.2021}, a data container that aligns experimental metadata with the experimental measurement in a single, wide-formatted data structure, in scRNAseq common data structures at the core of the scverse \cite{Virshup.2023} ecosystems have greatly improved interoperability and modularity across methods has sparked a rich open source community and has been shown to be applicable to -omics modalities \cite{Bredikhin.2022,Marconato.2024,Heumos.2024}.
+While some software solutions in this ecosystem such as scanpy \cite{Wolf.2018} for the analysis of scRNAseq data, sceptre \cite{Schoof.2021}, and msmu \cite{Choi.2026} are in parts applicable to proteomics data and have demonstrated the potential of shared data structures \cite{Furtwangler.2025}, they do not provide an end-to-end solution for the analysis of proteomics data, such as accounting for differences in data distribution, impact of missing values, and hierarchical feature organization intrinsic to bottom up proteomics. \smallskip
+
+Taking the scverse ecosystem as precedence, we sought to build that analogous structures for proteomics.
+Here, we present alphapepttools: a performant, scalable, and extensible computational framework for the analysis of modern proteomics data built on the anndata standard.
+We showcase that alphapepttools can analyze proteomics data from various flavors of MS-based proteomics, including body fluids, peptidomics, single cells, and bulk samples, independent of the search and quantification engine used.
+We further demonstrate its ability to integrate proteomics data with other omics modalities, including spatial information and RNA-sequencing data.
+By building on the anndata standard, alphapepttools is further fully compatible with a range of domain-specific analysis packages.
+
+More broadly, we hope to catalyze the development of novel, widely applicable analysis methods that bridge proteomics data analyses with adjacent omics modalities and computational ecosystems.
 
 \section{Results}\label{sec:results}
 % \section, \subsection, \subsubsection
@@ -87,7 +118,6 @@
 \backmatter
 
 \bmhead{Supplementary information}
-
 If your article has accompanying supplementary file/s please state so here.
 
 \bmhead{Acknowledgements}
