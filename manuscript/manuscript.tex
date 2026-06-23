@@ -11,6 +11,7 @@
 \usepackage{textcomp}%
 \usepackage{manyfoot}%
 \usepackage{booktabs}%
+\usepackage{tabularx}%
 \usepackage{algorithm}%
 \usepackage{algorithmicx}%
 \usepackage{algpseudocode}%
@@ -112,6 +113,25 @@ More broadly, we hope to catalyze the development of novel, widely applicable an
 
 \section{Results}\label{sec:results}
 % \section, \subsection, \subsubsection
+
+% Reader table (probably to be moved to Supplementary), generated from notebooks/reader_table.ipynb
+\begin{table}[ht]
+\centering
+\caption{Reader functions implemented across proteomics packages built on the AnnData/MuData ecosystem. PSM-level readers ingest precursor- or peptide-level search outputs (features are peptide identifiers); protein-group (PG) readers ingest protein-group-level matrices (features are protein identifiers).}\label{tab:readers}
+\begin{tabularx}{\textwidth}{l X X}
+\toprule
+Package & PSM readers & Protein-group readers \\
+\midrule
+ProtData\cite{Frank.2025} & Spectronaut & MaxQuant, DIA-NN, FragPipe, Spectronaut, mzTab \\
+\midrule
+MSMU\cite{Choi.2026} & Sage, MaxQuant, FragPipe, DIA-NN, DELPI & --- \\
+\midrule
+ProteoPy\cite{Fichtner.2026} & DIA-NN & --- \\
+\midrule
+alphapepttools & AlphaDia, MaxQuant, DIA-NN, AlphaPept, Spectronaut, MSFragger, Sage, pFind, OpenSWATH, Spectronaut speclib & AlphaDia, MaxQuant, DIA-NN, AlphaPept, Spectronaut, FragPipe, DirectLFQ, mzTab, ProteomeDiscoverer \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
 \section{Discussion}\label{sec:discussion}
 
