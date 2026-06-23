@@ -237,3 +237,10 @@ thesis-blx.bib
 # directories 
 # Ignore figures
 .vscode
+
+# MacOS
+.DS_Store
+
+# Agents
+.claude/**
+AGENT.md
