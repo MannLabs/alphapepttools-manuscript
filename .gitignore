@@ -248,7 +248,7 @@ AGENT.md
 # Data
 *.h5ad
 *.h5mu
-*.h5df
+*.hdf5
 *.txt
 *.tsv
 *.csv
