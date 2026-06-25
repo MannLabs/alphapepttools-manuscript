@@ -246,10 +246,10 @@ thesis-blx.bib
 AGENT.md
 
 # Data
-.h5ad
-.h5mu
-.h5df
-.txt
-.tsv
-.csv
-.xlsx
+*.h5ad
+*.h5mu
+*.h5df
+*.txt
+*.tsv
+*.csv
+*.xlsx
