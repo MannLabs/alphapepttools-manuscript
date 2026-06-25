@@ -244,3 +244,12 @@ thesis-blx.bib
 # Agents
 .claude/**
 AGENT.md
+
+# Data
+.h5ad
+.h5mu
+.h5df
+.txt
+.tsv
+.csv
+.xlsx
