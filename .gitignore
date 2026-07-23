@@ -236,7 +236,7 @@ thesis-blx.bib
 
 # Data
 *.txt
-.csv
+*.csv
 *.tsv
 *.xlsx 
 *.hdf5
