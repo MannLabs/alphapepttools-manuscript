@@ -234,6 +234,13 @@ thesis-blx.bib
 *.svg
 *.pdf
 
+# Data
+*.tsv
+*.xlsx 
+*.hdf5
+*.h5ad
+*.h5mu
+
 # directories 
 # Ignore figures
 .vscode
