@@ -2,17 +2,20 @@
 
 Reanalysis of Lehtioe et al 2021.
 
-
 ## Data availability 
 
 Get the data by running the `io/downloads.sh` script (you need to install pridepy)
 
 ```bash
-cd io
+cd data
 bash download.sh
 ```
+Data was ingested into anndata objects with the notebooks (`data/io-methylome-paper.ipynb`, `data/io-rna-paper.ipynb`). 
 
-Data was ingested into anndata with the respective notebooks
+
+## Notebooks
+
+The main MOFA+ analysis is performed in the notebook `analysis/study_05_multimodal.ipynb`. Paper-specific downstream analyses are performed in the additional notebooks.
 
 
 ## References
