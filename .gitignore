@@ -234,6 +234,15 @@ thesis-blx.bib
 *.svg
 *.pdf
 
+# Data
+*.txt
+*.csv
+*.tsv
+*.xlsx 
+*.hdf5
+*.h5ad
+*.h5mu
+
 # directories 
 # Ignore figures
 .vscode
@@ -244,3 +253,12 @@ thesis-blx.bib
 # Agents
 .claude/**
 AGENT.md
+
+# Data
+*.h5ad
+*.h5mu
+*.hdf5
+*.txt
+*.tsv
+*.csv
+*.xlsx
