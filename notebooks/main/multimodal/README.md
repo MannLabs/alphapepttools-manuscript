@@ -4,7 +4,7 @@ Reanalysis of Lehtioe et al 2021.
 
 ## Data availability 
 
-Get the data by running the `io/downloads.sh` script (you need to install pridepy)
+Get the data by running the `data/downloads.sh` script (you need to install pridepy)
 
 ```bash
 cd data
