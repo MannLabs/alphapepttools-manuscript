@@ -5,7 +5,7 @@ Publication code + manuscript for alphapepttools for reproducibility
 
 ```bash
 notebooks
-├── applications
+├── main
 │   ├── CSF (Bader et al)
 │   ├── PELSA (Li et al)
 │   ├── scDVP (Weiss et al)
