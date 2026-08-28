@@ -262,3 +262,11 @@ AGENT.md
 *.tsv
 *.csv
 *.xlsx
+# Study assets are intentionally tracked (overrides the image/data rules above).
+# Keep OS junk out.
+!assets/study_01_biomarker_csf/**
+!assets/study_02_peptidomics_pelsa/**
+.DS_Store
+
+# ...but not the regenerable MMseqs/MSA scratch inside the Boltz results.
+assets/**/boltz_results_*/msa/**
