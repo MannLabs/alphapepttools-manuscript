@@ -10,12 +10,22 @@ Get the data by running the `data/downloads.sh` script (you need to install prid
 cd data
 bash download.sh
 ```
-Data was ingested into anndata objects with the notebooks (`data/io-methylome-paper.ipynb`, `data/io-rna-paper.ipynb`). 
+Data was ingested into anndata objects with the notebooks (`data/io-methylome-paper.ipynb`, `data/io-rna-paper.ipynb`).
 
 
 ## Notebooks
 
-The main MOFA+ analysis is performed in the notebook `analysis/study_05_multimodal.ipynb`. Paper-specific downstream analyses are performed in the additional notebooks.
+### Setup environment 
+
+Setup an environemnt with `alphapepttools-manuscript/requirements/requirements-multimodal.txt`
+
+```shell
+# From alphapepttools-manuscript
+conda create -n alphapepttools python=3.13 -y && conda activate alphapepttools
+pip install -r requirements/requirements-multimodal.txt
+```
+
+The main MOFA+ analysis is performed in the notebook `analysis/study_05_multimodal.ipynb`. Output will be written to the `./data` directory. Paper-specific downstream analyses are performed in the additional notebooks.
 
 
 ## References
