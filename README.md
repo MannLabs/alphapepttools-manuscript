@@ -7,8 +7,10 @@ Publication code + manuscript for alphapepttools for reproducibility
 
 Analysis scripts are separated into main analyses (applications shown in Figure 1/2) and supplementary analyses.
 
+
 ```bash
 notebooks
+├── requirements
 ├── main
 │   ├── csf (Cerebrospinal fluid study, Bader et al 2020)
 │   ├── pelsa (PELSA study, Li et al, 2025)
@@ -17,4 +19,11 @@ notebooks
 └── supplementary
     ├── scalability
     └── proteomics-properties
+```
+
+You can rerun the analyses by creating a python environment with the matching requirements file
+
+```shell
+conda create -n alphapepttools python=3.13 -y && conda activate alphapepttools
+pip install -r requirements/requirements_{csf,pelsa,scdvp,multimodal}.txt
 ```
