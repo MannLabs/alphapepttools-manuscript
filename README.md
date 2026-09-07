@@ -1,4 +1,6 @@
 # alphapepttools-manuscript
+[![Build environment](https://github.com/MannLabs/alphapepttools-manuscript/actions/workflows/build.yaml/badge.svg)](https://github.com/MannLabs/alphapepttools-manuscript/actions/workflows/build.yaml)
+
 Publication code + manuscript for alphapepttools for reproducibility
 
 ## Repository structure
