@@ -262,6 +262,7 @@ AGENT.md
 *.tsv
 *.csv
 *.xlsx
+*.geojson
 # Frozen environments are intentionally tracked (overrides the *.txt rule above).
 !requirements/requirements-*.txt
 # Study assets are intentionally tracked (overrides the image/data rules above).
