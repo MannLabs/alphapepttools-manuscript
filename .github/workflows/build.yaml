@@ -25,6 +25,7 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
         python: ["3.13"]
         requirements:
+          - requirements/requirements-scdvp.txt
           - requirements/requirements-multimodal.txt
 
     name: ${{ matrix.os }} Python ${{ matrix.python }} (${{ matrix.requirements }})
