@@ -268,6 +268,7 @@ AGENT.md
 # Keep OS junk out.
 !assets/study_01_biomarker_csf/**
 !assets/study_02_peptidomics_pelsa/**
+!assets/study_04_scDVP/**
 .DS_Store
 
 # ...but not the regenerable MMseqs/MSA scratch inside the Boltz results.
