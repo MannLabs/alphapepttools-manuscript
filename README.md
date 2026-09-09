@@ -25,5 +25,5 @@ You can rerun the analyses by creating a python environment with the matching re
 
 ```shell
 conda create -n alphapepttools python=3.13 -y && conda activate alphapepttools
-pip install -r requirements/requirements-{csf,pelsa,scdvp,multimodal}.txt
+pip install -r requirements/requirements-{csf,pelsa,scdvp,multimodal,scalability}.txt
 ```

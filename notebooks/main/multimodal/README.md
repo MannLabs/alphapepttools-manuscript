@@ -19,7 +19,7 @@ The main MOFA+ analysis is performed in the notebook `analysis/study_05_multimod
 
 ## Data availability 
 
-The original data was obtained bz running the `data/downloads.sh` script (which needs pridepy)
+The original data was obtained by running the `data/downloads.sh` script (which needs pridepy)
 
 ```bash
 cd data

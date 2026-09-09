@@ -29,6 +29,7 @@ jobs:
           - requirements/requirements-pelsa.txt
           - requirements/requirements-scdvp.txt
           - requirements/requirements-multimodal.txt
+          - requirements/requirements-scalability.txt
 
     name: ${{ matrix.os }} Python ${{ matrix.python }} (${{ matrix.requirements }})
 
