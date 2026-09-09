@@ -9,8 +9,8 @@ Analysis scripts are separated into main analyses (applications shown in Figure 
 
 
 ```bash
+requirements
 notebooks
-├── requirements
 ├── main
 │   ├── csf (Cerebrospinal fluid study, Bader et al 2020)
 │   ├── pelsa (PELSA study, Li et al, 2025)

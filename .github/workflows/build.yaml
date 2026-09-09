@@ -25,6 +25,8 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
         python: ["3.13"]
         requirements:
+          - requirements/requirements-csf.txt
+          - requirements/requirements-pelsa.txt
           - requirements/requirements-scdvp.txt
           - requirements/requirements-multimodal.txt
 
