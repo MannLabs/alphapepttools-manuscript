@@ -2,17 +2,6 @@
 
 Reanalysis of Lehtioe et al 2021.
 
-## Data availability 
-
-Get the data by running the `data/downloads.sh` script (you need to install pridepy)
-
-```bash
-cd data
-bash download.sh
-```
-Data was ingested into anndata objects with the notebooks (`data/io-methylome-paper.ipynb`, `data/io-rna-paper.ipynb`).
-
-
 ## Notebooks
 
 ### Setup environment 
@@ -27,6 +16,16 @@ pip install -r requirements/requirements-multimodal.txt
 
 The main MOFA+ analysis is performed in the notebook `analysis/study_05_multimodal.ipynb`. Output will be written to the `./data` directory. Paper-specific downstream analyses are performed in the additional notebooks.
 
+
+## Data availability 
+
+The original data was obtained bz running the `data/downloads.sh` script (which needs pridepy)
+
+```bash
+cd data
+bash download.sh
+```
+Data was ingested into anndata objects with the notebooks (`data/io-methylome-paper.ipynb`, `data/io-rna-paper.ipynb`).
 
 ## References
 1. **Proteomics Data**: Lehtiö, J. et al. Proteogenomics of non-small cell lung cancer reveals molecular subtypes associated with specific therapeutic targets and immune-evasion mechanisms. Nat Cancer 2, 1224–1242 (2021). [PXD020191](https://www.ebi.ac.uk/pride/archive/projects/PXD020191)
